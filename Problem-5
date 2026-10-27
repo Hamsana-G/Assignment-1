@@ -1,0 +1,35 @@
+#include<stdio.h>
+void main()
+{
+  int total_charge,charge,premium,regular;
+  char membership_type;
+  
+  premium =1;
+  regular =0;
+  printf("declare the membership_type:");
+  scanf("%c",&membership_type);
+  printf("Enter the amount of charge:");
+  scanf("%d",&charge);
+  
+  if(charge>=500)
+  {
+   if(membership_type=='1')
+   {
+    total_charge = charge-charge*10/100;
+    printf("No delivery charges and a discount of 10 percent is given");
+    printf("\n%d",total_charge);
+   }
+   else
+   {
+    total_charge=charge;
+    printf("\nNo delivery charges and includes no discount");
+    printf("\n%d",total_charge);
+   }
+  }
+  else 
+  {
+   total_charge = charge+50;
+   printf("\nNo discount but includes a delivery charge of 50");
+   printf("\n%d",total_charge);
+  } 
+}
