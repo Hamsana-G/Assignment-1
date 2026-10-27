@@ -1,0 +1,24 @@
+#include<stdio.h>
+void main()
+{
+ int user_id,password;
+ 
+ printf("enter user_id:");
+ scanf("%d",&user_id);
+ printf("enter password:");
+ scanf("%d",&password);
+ 
+ if((user_id==101)&&(password==4321))
+ {
+  printf("Login successful");
+ } 
+ else if(user_id!=101)
+ {
+  printf("Invalid user id");
+ }
+ else if(password!=4321)
+ {
+  printf("Invalid password");
+ }
+}   
+ 
